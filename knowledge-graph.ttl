@@ -11,14 +11,14 @@ ns:Food rdf:type owl:Class .
 ns:MealType rdf:type owl:Class .
 ns:Ingredient rdf:type owl:Class .
 ns:Dish rdf:type owl:Class ;
-    rdf:subClassOf ns:Food . 
+    rdfs:subClassOf ns:Food . 
 ns:Country rdf:type owl:Class . 
 ns:VeganDish rdf:type owl:Class ;
-    rdf:subClassOf ns:Dish . 
+    rdfs:subClassOf ns:Dish . 
 ns:VegetarianDish rdf:type owl:Class ;
-    rdf:subClassOf ns:Dish . 
+    rdfs:subClassOf ns:Dish . 
 ns:MeatDish rdf:type owl:Class ; 
-    rdf:subClassOf ns:Dish . 
+    rdfs:subClassOf ns:Dish . 
 ns:Chef rdf:type owl:Class .
 
 ns:preparedBy rdf:type owl:ObjectProperty ;
