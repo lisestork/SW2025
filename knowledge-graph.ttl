@@ -35,13 +35,13 @@ ns:origins rdf:type owl:ObjectProperty ;
     rdfs:range ns:Country .
     
 ns:isVegan rdf:type owl:DatatypeProperty ;
-    rdfs:domain ns:Dish, ns:Ingredient ;
+    rdfs:domain ns:Dish ;
     rdfs:range xsd:boolean .
 ns:hasCookingTime rdf:type owl:DatatypeProperty ;
-    rdfs:domain ns:Dish ;
+    rdfs:domain ns:Ingredient ;
     rdfs:range xsd:integer .
 ns:hasGramsOfProtein rdf:type owl:DatatypeProperty ;
-    rdfs:domain ns:Dish ;
+    rdfs:domain ns:Ingredient ;
     rdfs:range xsd:float .
 
 # Disjoint classes
