@@ -98,7 +98,7 @@ ns:MealType a owl:Class ;
 :lunch a ns:MealType, owl:NamedIndividual .
 :dinner a ns:MealType, owl:NamedIndividual .
 
-:stirFryRamen rdf:type ns:Dish, ns:VeganDish, ns:Food ;
+:stirFryRamen a owl:NamedIndividual;
     ns:contains :peanutButter ;
     ns:contains :ramenNoodle ;
     ns:contains :soy ; 
@@ -109,16 +109,16 @@ ns:MealType a owl:Class ;
     ns:origins :japan . 
 
 #Ingredients 
-:peanutButter rdf:type ns:Ingredient, owl:NamedIndividual ;
+:peanutButter rdf:type owl:NamedIndividual ;
     ns:hasGramsOfProtein "9.5"^^xsd:float .
 
-:ramenNoodle rdf:type ns:Ingredient, owl:NamedIndividual ; 
+:ramenNoodle rdf:type owl:NamedIndividual ; 
     ns:hasGramsOfProtein "20.3"^^xsd:float . 
 
-:soy rdf:type ns:Ingredient, owl:NamedIndividual ; 
+:soy rdf:type owl:NamedIndividual ; 
     ns:hasGramsOfProtein "30"^^xsd:float . 
     
 #Other 
-:jamie_oliver rdf:type ns:Chef, owl:NamedIndividual . 
+:jamie_oliver rdf:type owl:NamedIndividual . 
 :japan rdf:type ns:Country, owl:NamedIndividual . 
 :dinner rdf:type ns:MealType, owl:NamedIndividual .
